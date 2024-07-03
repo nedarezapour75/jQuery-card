@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پروژه شماره 3</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/df4c2609b9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .course-title {
+        font-weight: bold;
+        font-size: 34px;
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #d8e0e5;
+        font-size: 24px;
+        min-height: 100%;
+      }
+      a {
+        text-decoration: none;
+      }
+      .card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s;
+        margin-top: 50px;
+        width: 376px;
+      }
+      .card:hover {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+      }
+      .card-tom {
+        height: 235px;
+        overflow: hidden;
+        background-color: black;
+        transition: height 0.3s;
+      }
+      .card:hover .card-tom{
+        height: 90px;
+      }
+      .card-tom img {
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      .card:hover .card-tom img {
+        opacity: 0.6;
+        transform: scale(1.2);
+      }
+      .card .card-date {
+        background-color: rgb(30, 134, 186);
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        min-width: 72px;
+        height: 37px;
+        border-radius: 6px;
+        color: rgb(252, 248, 202);
+        text-align: center;
+        padding: 2px 8px;
+        font-size: 16px;
+      }
+      .card-body {
+        padding: 20px;
+        height: 185px;
+        position: relative;
+        transition: height 0.3s;
+      }
+      .card:hover .card-body {
+        height: 330px;
+      }
+      .card-category {
+        position: absolute;
+        top: -23px;
+        left: 0;
+        background-color: rgb(30, 134, 186);
+        color: rgb(252, 248, 202);
+padding: 0 15px;
+font-size: 12px;
+line-height: 24px;
+      }
+      .card .card-title{
+padding: 0 0 10 0;
+margin: 0;
+font-size: 18px;
+font-weight: bolder;
+      }
+      .card .card-subtitle{
+        margin: 0;
+        padding: 0 0 10px 0;
+font-size: 18px;
+color: #08c;
+      }
+      .card .card-description{
+        position: absolute;
+        top: 126px;
+        left: 20px;
+        right: 20px;
+        bottom: 65px;
+        color: #666c74;
+        font-size: 16px;
+        line-height: 25px;
+        transition: opcity .2s, transform .2s;
+        transform: translateY(25px);
+        opacity: 0;
+      }
+      .card:hover .card-description{
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .card .card-footer{
+        position: absolute;
+        color: #a3a9ab;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        font-size: 13px;
+
+      }
+
+      .material-symbols-outlined{
+        font-size: 31px;
+        vertical-align: -6px;
+        
+      }
+      span .icon1, span .icon2{
+        font-size: 45px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="t-c">
+      <p class="course-title">پروژه شماره 3</p>
+    </div>
+    <div class="card">
+      <div class="card-tom">
+        <a href="">
+          <img src="assets/img/a2.jpg" alt="" />
+        </a>
+      </div>
+      <div class="card-date">
+        <span>12</span>
+        <span>اردیبهشت</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category">طراحی وب</div>
+        <div class="card-title">انیمیشن ها در css</div>
+        <div class="card-subtitle">قسمت اول: معرفی properties</div>
+        <p class="card-description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
+          ratione nihil
+        </p>
+      </div>
+      <div class="card-footer">
+        <span class="icon1 icon-time"
+          ><i class="  material-symbols-outlined"> alarm </i> دقیقه
+          30</span
+        >
+        <span  class="icon-comment icon2"
+          ><i class="  material-symbols-outlined"> comment </i>
+          2 دیدگاه</span
+        >
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
